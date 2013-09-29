@@ -17,7 +17,9 @@ class RootFooPluginSpec extends mutable.Specification {
 
     "know about the salat plugin in the root project" in new WithApplication {
 
-		current.plugin[se.radley.plugin.salat.SalatPlugin] must beSome[se.radley.plugin.salat.SalatPlugin]
+      println(current.plugins)
+
+		  current.plugin[se.radley.plugin.salat.SalatPlugin] must beSome[se.radley.plugin.salat.SalatPlugin]
 
     }
 
